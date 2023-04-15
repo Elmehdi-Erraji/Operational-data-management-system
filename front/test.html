@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<style type="text/css">
+   
+    
+     
+    
+    ul li{
+     list-style: none;
+     width: 200px;
+     line-height: 60px;
+     position: relative;
+     background: #222;
+     box-shadow: 0px 2px 5px 0px grey;
+     text-align: center;
+     float: left;
+     background-color: #010000;
+    }
+    ul li ul{
+     position: absolute;
+    }
+    .nav > ul > li:nth-of-type(1){
+     border-radius: 5px 0px 0px 5px;
+    }
+    .nav > ul > li:nth-of-type(5){
+     border-radius: 0px 5px 5px 0px;
+    }
+    ul li a{
+     color: #fff;
+     width: 200px;
+     height: 58px;
+     display: inline-block;
+     text-decoration: none;
+    }
+    ul li a:hover{
+     font-weight: bold;
+     border-bottom: 2px solid #fff;
+    }
+    
+    .nav ul li:hover ul{
+     display: block;
+    }
+   
+    
+    ul li ul{
+     display: none;
+    }
+    @media screen and (max-width: 480px){
+     header{
+     width: 100%;
+     }
+     
+     ul li{
+     width: 100%;
+     float: none;
+     }
+     ul li a{
+     width: 100%;
+     display: block;
+     }
+     ul li ul{
+     position: static;
+     }
+     ul li ul li a{
+     background: #222;
+     }
+     
+     
+    }
+    </style>
+<body>
+     
+ <div class="menu"></div>
+ 
+ <nav class="nav" >
+  <ul>
+        <li><a href="#">Codes</a>
+  <ul>
+        <li><a href="#">HTML 5</a></li>
+         <li><a href="#">CSS 3</a></li>
+         <li><a href="#">JavaScript</a></li>
+  </ul>
+  </li>
+         <li><a href="#">Projects</a>
+  <ul>
+         <li><a href="#">Project 1</a></li>
+         <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+  </ul>
+  </li>
+  </ul>
+
+
+ </nav>
+
+
+</body>
+</html>
